@@ -1,10 +1,12 @@
 import './App.css';
-import Navbar from './components/Navbar.js';
+import Navbar from './components/Navbar';
 import Marketplace from './components/Marketplace';
 import Profile from './components/Profile';
-import SellNFT from './components/SellNFT';
-import NFTPage from './components/NFTpage';
-import ReactDOM from "react-dom/client";
+import Sell from './components/Sell';
+import Page from './components/page';
+import Login from './components/Login';
+import Footer from "./components/Footer";
+import SignUp from './components/SignUp';
 import {
   BrowserRouter,
   Routes,
@@ -13,15 +15,20 @@ import {
 
 function App() {
   return (
-    <div className="container">
-        <Routes>
-          <Route path="/" element={<Marketplace />}/>
-          <Route path="/nftPage" element={<NFTPage />}/>        
-          <Route path="/profile" element={<Profile />}/>
-          <Route path="/sellNFT" element={<SellNFT />}/>             
-        </Routes>
-    </div>
+      <div className="App">
+            <BrowserRouter>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Marketplace />} />
+                    <Route path="/page/:tokenId" element={<Page />} />
+                    <Route path="/profile" element={<Profile />} />
+                    <Route path="/sell" element={<Sell />} />
+
+                </Routes>
+                <Footer />
+            </BrowserRouter>
+      </div>
   );
 }
 
-export default App;
+      export default App;

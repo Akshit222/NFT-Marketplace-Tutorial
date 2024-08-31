@@ -12,6 +12,28 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.login{
+  margin-left: 30%;
+  margin-top: 100px;
+}
+.footer {
+  position: absolute;
+  bottom: -347px;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(188, 163, 199);
+}
+.Navbar {
+  background: linear-gradient(135deg, #e0e0e0, #ffcccc); /* Slightly darker whitish and reddish gradient */
+  padding: 15px 30px; /* Increased padding for more space */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Adds space between the logo and the navigation links */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Adds rounded corners to the navbar */
+}
+
 
 .App-header {
   background-color: #282c34;
